@@ -392,7 +392,7 @@ button:hover {
     h1 {
         font-size: 2.5em;
         text-align: center;
-        margin-top: 0px;
+        margin-top: 10px;
     }
 
     .topline {
@@ -406,7 +406,6 @@ button:hover {
         left: 70%;
         transform: translateX(-50%);
     }
-
     .multitext {
         font-size: 1em;
         text-align: center;
@@ -417,6 +416,13 @@ button:hover {
         font-size: 1em;
         margin: 20px;
         margin-top: -10px;
+        color: #b7d6f7;
+        text-align: center;
+        width: 90%;
+        line-height: 1.4;
+        margin-right: 0px;
+        margin-left: 0px;
+
     }
 
     /* Adjust buttons */
@@ -426,7 +432,7 @@ button:hover {
         flex-direction: column;
         align-items: center;
         width: 50%;
-        margin-top: 200px;
+        margin-top: 100px;
         font-size: 1em;
         height: 40px;
         justify-content: center;
