@@ -190,15 +190,16 @@ body.changed {
         padding: 10px 20px;
         border-radius: 5px;
     }
-    @keyframes typing {
-    from {
-        width: 0;
-    }
 
-    to {
-        width: 17ch;
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 17ch;
+        }
     }
-}
 }
 
 .wrapper {
@@ -260,7 +261,7 @@ body.changed {
 .topline {
     display: block;
     position: relative;
-    font-size: 35px;
+    font-size: 37px;
     letter-spacing: 5px;
     color: #2d3e50;
 }
@@ -429,12 +430,14 @@ button:hover {
         font-size: 1em;
         height: 40px;
         justify-content: center;
-    }  
-    .hire, .download {
+    }
+
+    .hire,
+    .download {
         width: 100%;
         margin-top: 10px;
     }
-    
+
     /* Image box adjustments */
     .imgbox img {
         top: -200px;
@@ -444,7 +447,7 @@ button:hover {
     }
 
     .imgbox #splash {
-        top: 0px;
+        top: -20px;
         width: 100%;
         height: 100%;
     }
@@ -475,5 +478,5 @@ button:hover {
         left: 50%;
         top: 0%;
     }
- 
+
 }
