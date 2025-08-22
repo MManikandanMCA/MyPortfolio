@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manikandan's protfolio</title>
+    <link rel="stylesheet" href="dasboard.css" />
+    <link rel="stylesheet" href="contact.css" />
+
+</head>
+
+<body>
+    <!--Navigation-->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div id="logo-container">
+                <img src="logo.jpeg" alt="Myprofile" id="Mylogo" />
+            </div>
+            <div class="text-container" id="textContainer">
+                <div class="names">MManikandan MCA</div>
+                <div class="domain">FullStack Developer</div>
+            </div>
+        </div>
+        <div class="menu-toggle" id="menuToggle">&#9776;</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Certificate</a></li>
+            <li><a href="#">Skills</a></li>
+            <li class="active"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <!--main content-->
+    <div class="main-content">
+        <h1>Contact Us</h1>
+        <h2 class="phara">Thank you for Visit. Please send to the mail, let we will touch as.</h2>
+
+        <!-- Form Section -->
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class="field" placeholder="Enter your Name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="field" placeholder="Enter your Email"><br><br>
+
+            <label for="message">Message:</label>
+            <textarea id="textarea" name="textarea" rows="4" cols="50"
+                placeholder="Type your message here..."></textarea><br><br>
+
+            <input type="submit" value="Send" id="submit">
+        </form>
+
+        <!-- Contact Details Section -->
+        <div class="contact-details">
+            <h5><strong><img src="phone.png" height="20px" /></strong> 6385501361</h5>
+            <h5><img src="mail.png" height="20px" /> mmanikandanmca2023@gmail.com</h5>
+            <h5><img src="location-pin.png" height="20px" /> Rajapalayam, Tamil Nadu 626 188, India</h5>
+        </div>
+        <div class="contact-images">
+            <a href="https://github.com/MManikandanMCA" target="_blank"><img src="github.png"></a>
+            <a href="https://www.linkedin.com/in/mmanikanadanmca/" target="_blank"><img src="linked_in.png"></a>
+            <a href="https://www.youtube.com/@masscooking5628" target="_blank"><img src="youtube.png" ></a>
+            <a href="https://www.instagram.com/massmani_mca?igsh=MWFqcTBvOWE2ZmY5ag==" target="_blank"><img src="instagram (2).png"></a>
+        </div>
+    </div>
+
+
+    <!--Typed.js Library-->
+    <script src="script.js"> </script>
+</body>
+
+</html>

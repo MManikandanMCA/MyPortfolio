@@ -6,7 +6,7 @@ body {
     font-family: Cambria, serif;
     background-color: #f0f0f0cf;
     transition: background-color 1s ease;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body.changed {
@@ -155,7 +155,13 @@ body.changed {
     font-size: 1em;
     transition: color 0.3s ease;
 }
-
+.active { 
+    color: #a40af7;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    font-weight: 600;
+    transition: color 10s ease;
+}
 /* Hamburger menu */
 .menu-toggle {
     display: none;

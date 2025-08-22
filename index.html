@@ -22,12 +22,11 @@
         </div>
         <div class="menu-toggle" id="menuToggle">&#9776;</div>
         <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Certificate</a></li>
             <li><a href="#">Skills</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contect.html">Contact</a></li>
         </ul>
     </nav>
     <!--Main Content-->
@@ -51,37 +50,8 @@
     </div>
     <!--Typed.js Library-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        const logoContainer = document.getElementById('logo-container');
-        const textContainer = document.getElementById('textContainer');
-        const menuToggle = document.getElementById('menuToggle');
-        const navLinks = document.getElementById('navLinks');
-
-        setTimeout(() => {
-            logoContainer.classList.add('move-to-corner');
-
-            setTimeout(() => {
-                textContainer.classList.add('show');
-                document.querySelector('.names').classList.add('typing');
-                document.querySelector('.domain').classList.add('typing');
-                document.body.classList.add('changed');
-            }, 1000);
-        }, 2500);
-        
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Typed.js Initialization 
-        var typed = new Typed('.multitext', {
-            strings: ['Developer','Coder','FreeLancer'],
-            typeSpeed: 120,
-            backSpeed: 80,
-            backDelay: 1000,
-            startDelay: 1000,
-            loop: true
-        });
-    </script>
+    <script src="script.js">
+</script>
 </body>
 
 </html>
