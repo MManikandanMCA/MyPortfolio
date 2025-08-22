@@ -31,14 +31,14 @@
             <li class="activepage"><a href="#">Contact</a></li>
         </ul>
     </nav>
-    
+
     <!--main content-->
     <div class="main-content">
         <h1>Contact Us</h1>
         <h2 class="phara">Thank you for Visit. Please send to the mail, let we will touch as.</h2>
 
         <!-- Form Section -->
-        <form>
+        <form id="contactForm">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" class="field" placeholder="Enter your Name"><br><br>
 
@@ -61,8 +61,9 @@
         <div class="contact-images">
             <a href="https://github.com/MManikandanMCA" target="_blank"><img src="github.png"></a>
             <a href="https://www.linkedin.com/in/mmanikanadanmca/" target="_blank"><img src="linked_in.png"></a>
-            <a href="https://www.youtube.com/@masscooking5628" target="_blank"><img src="youtube.png" ></a>
-            <a href="https://www.instagram.com/massmani_mca?igsh=MWFqcTBvOWE2ZmY5ag==" target="_blank"><img src="instagram (2).png"></a>
+            <a href="https://www.youtube.com/@masscooking5628" target="_blank"><img src="youtube.png"></a>
+            <a href="https://www.instagram.com/massmani_mca?igsh=MWFqcTBvOWE2ZmY5ag==" target="_blank"><img
+                    src="instagram (2).png"></a>
         </div>
     </div>
     <div class="wapper2"></div>
@@ -71,6 +72,16 @@
 
     <!--Typed.js Library-->
     <script src="script.js"> </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "F4dnLM94MrkBl1hVI",
+            });
+        })();
+    </script>
+    <script src="emailsend.js"></script>
 </body>
 
 </html>
