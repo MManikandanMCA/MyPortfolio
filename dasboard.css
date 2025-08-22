@@ -456,7 +456,8 @@ button:hover {
     .wrapper {
         flex-direction: column;
         padding: 0 5%;
-        overflow: visible;
+        overflow: hidden;
+        
     }
 
     .cols {
