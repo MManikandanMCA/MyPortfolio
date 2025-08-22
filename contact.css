@@ -105,3 +105,17 @@ h5{
 .contact-images :hover{
     height: 80px;
 }
+@media (max-width:768px) {
+    h1{
+        font-size: 42px;
+    }
+    .contact-details h5{
+        margin-left: 2%;
+    }
+    .contact-images img{
+        height: 40px;
+    }
+    .contact-images img:hover{
+        height: 50px;
+    }
+}

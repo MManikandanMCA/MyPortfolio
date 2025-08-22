@@ -155,7 +155,7 @@ body.changed {
     font-size: 1em;
     transition: color 0.3s ease;
 }
-.active { 
+.activepage { 
     color: #a40af7;
     text-decoration: underline;
     text-underline-offset: 8px;
@@ -296,11 +296,11 @@ h1 {
     font-size: 0.5em;
 }
 
-p {
+h6 {
     display: block;
     width: 90%;
     font-size: 1.2em;
-    color: #2d3e50;
+    color: rgb(9, 48, 126);
     text-align: center;
     margin-right: 100px;
     margin-left: 100px;
@@ -418,11 +418,11 @@ button:hover {
     }
 
     /* Adjust paragraph */
-    p {
+    h6 {
         font-size: 1em;
         margin: 20px;
         margin-top: -10px;
-        color: #b7d6f7;
+        color: rgb(9, 48, 126);
         text-align: center;
         width: 90%;
         line-height: 1.4;
