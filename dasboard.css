@@ -190,6 +190,15 @@ body.changed {
         padding: 10px 20px;
         border-radius: 5px;
     }
+    @keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 17ch;
+    }
+}
 }
 
 .wrapper {
@@ -466,4 +475,5 @@ button:hover {
         left: 50%;
         top: 0%;
     }
+ 
 }
