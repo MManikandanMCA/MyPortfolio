@@ -91,31 +91,150 @@ textarea {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
 }
-h5{
+
+h5 {
     margin-left: 20%;
 }
-.contact-details p{
+
+.contact-details p {
     text-align: center;
 }
-.contact-images{
+
+.contact-images {
     display: flex;
     justify-content: center;
     gap: 25px;
 }
-.contact-images :hover{
+
+.contact-images :hover {
     height: 80px;
 }
+
+.wapper2 {
+    position: absolute;
+    content: '';
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    left: -10%;
+    top: 25%;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    animation: animateCircle1 20s linear infinite;
+}
+
+@keyframes animated {
+    50% {
+        left: -23%;
+        top: -30%;
+    }
+}
+
+.heart {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    transform: rotate(-45deg);
+    margin: 150px auto;
+    animation: beat 1s infinite;
+    float: right;
+    right: 150px;
+    margin-top: -600px;
+
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart::before {
+    top: -50px;
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: 50px;
+}
+
+/* Beating (scaling) animation */
+@keyframes beat {
+
+    0%,
+    100% {
+        transform: rotate(-45deg) scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: rotate(-45deg) scale(1.2);
+        opacity: 0.8;
+    }
+}
+
 @media (max-width:768px) {
-    h1{
+    h1 {
         font-size: 42px;
     }
-    .contact-details h5{
+
+    .contact-details h5 {
         margin-left: 2%;
     }
-    .contact-images img{
+
+    .contact-images img {
         height: 40px;
     }
-    .contact-images img:hover{
+
+    .contact-images img:hover {
         height: 50px;
     }
+
+    .wapper2 {
+        height: 100px;
+        width: 100px;
+        margin-left: 80px;
+        opacity: 0.5;
+    }
+
+    .heart {
+        height: 50px;
+        width: 50px;
+            
+
+    }
+
+    .heart::before,
+    .heart::after {
+        width: 50px;
+        height: 50px;
+    }
+
+    .heart::before {
+        top: -30px;
+        left: 0;
+    }
+
+    .heart::after {
+        top: 0;
+        left: 30px;
+    }
+    @keyframes beat {
+
+    0%,
+    100% {
+        opacity: 0.1;
+    }
+
+    50% {
+        transform: rotate(-45deg) scale(1.2);
+        opacity: 0.2;
+    }
+}
+
 }
