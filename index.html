@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!--Navigation-->
     <nav class="navbar">
         <div class="nav-left">
             <div id="logo-container">
@@ -29,6 +30,7 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+    <!--Main Content-->
     <div class="wrapper">
         <div class="cols cols0">
             <span class="topline">Hello</span>
@@ -36,9 +38,10 @@
             <p>I'm Manikandan M, a fresher and 2023 MCA graduate from Kalasalingam University. I am passionate about technology and software development, and I’m looking for an opportunity to start my career in the IT industry. I am eager to learn, grow, and prove my skills through hard work and dedication.</p>
             <div class="btns">
                 <button class="btn hire">Hire Me</button>
-                <button class="btn download">Download CV</button>
+                <a href="Manikandan_Developer.pdf" download><button class="btn download">Download CV</button></a>
             </div>
         </div>
+        <!--Side images-->
         <div class="cols cols1">
             <div class="imgbox">
                 <img src="splash.png" alt="splash" id="splash" />
@@ -46,6 +49,7 @@
             </div>
         </div>
     </div>
+    <!--Typed.js Library-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         const logoContainer = document.getElementById('logo-container');
@@ -63,12 +67,12 @@
                 document.body.classList.add('changed');
             }, 1000);
         }, 2500);
-
+        
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
 
-
+        // Typed.js Initialization 
         var typed = new Typed('.multitext', {
             strings: ['Developer','Coder','FreeLancer'],
             typeSpeed: 120,

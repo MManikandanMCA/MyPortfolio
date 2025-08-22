@@ -201,6 +201,7 @@ body.changed {
     padding: 0 10%;
     overflow: hidden;
 }
+
 .wrapper::before {
     position: absolute;
     content: '';
@@ -209,9 +210,10 @@ body.changed {
     border-radius: 50%;
     left: -10%;
     top: 25%;
-    background: linear-gradient(45deg,#7f00ff,pink);
-    animation:animateCircle1 20s linear infinite;    
+    background: linear-gradient(45deg, #7f00ff, pink);
+    animation: animateCircle1 20s linear infinite;
 }
+
 .wrapper::after {
     position: absolute;
     content: '';
@@ -220,27 +222,32 @@ body.changed {
     border-radius: 50%;
     left: 35%;
     top: -5%;
-    background: linear-gradient(45deg,#7f00ff,pink);
-    animation:animateCircle2 20s linear infinite;    
+    background: linear-gradient(45deg, #7f00ff, pink);
+    animation: animateCircle2 20s linear infinite;
 }
-@keyframes animateCircle1{
-    50%{
+
+@keyframes animateCircle1 {
+    50% {
         left: -13%;
         top: 41%;
     }
 }
-@keyframes animateCircle2{
-    50%{
+
+@keyframes animateCircle2 {
+    50% {
         left: 35%;
         top: 10%;
     }
 }
+
 .cols {
     width: 50%;
 }
+
 .cols0 {
     z-index: 1;
 }
+
 .topline {
     display: block;
     position: relative;
@@ -281,7 +288,7 @@ p {
     text-align: center;
     margin-right: 100px;
     margin-left: 100px;
-    margin-top: -80px; 
+    margin-top: -80px;
     line-height: 1.5;
 }
 
@@ -340,21 +347,126 @@ button:hover {
         transform: rotateY(180deg) translateY(-20px);
     }
 }
-.imgbox #splash{
+
+.imgbox #splash {
     position: absolute;
-    top:60%;
-    left:50%;
+    top: 60%;
+    left: 50%;
     height: 100%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 100%;
     filter: saturate(200%);
-    animation:animateSplash 4s linear infinite;
+    animation: animateSplash 4s linear infinite;
 }
-@keyframes animateSplash{
-    0%,100%{
-        transform: translate(-50%,-50%) rotate(-35deg) translateY(0px);
+
+@keyframes animateSplash {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) rotate(-35deg) translateY(0px);
     }
-    50%{
-        transform: translate(-50%,-50%) rotate(-35deg) translateY(-20px);
+
+    50% {
+        transform: translate(-50%, -50%) rotate(-35deg) translateY(-20px);
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Adjust logo */
+    #logo-container {
+        transform: translate(-50%, -50%) scale(2);
+    }
+
+    /* Center text and reduce size */
+    h1 {
+        font-size: 2.5em;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .topline {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 500px;
+        margin-left: 0px;
+    }
+
+    .topline::after {
+        left: 70%;
+        transform: translateX(-50%);
+    }
+
+    .multitext {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    /* Adjust paragraph */
+    p {
+        font-size: 1em;
+        margin: 20px;
+        margin-top: -10px;
+    }
+
+    /* Adjust buttons */
+    .btns {
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btns{
+        width: 50%;
+        margin-top: 200px;
+        font-size: 1em;
+        height: 40px;
+        left: 10px;
+    }
+    .hire, .download {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    /* Image box adjustments */
+    .imgbox img {
+        top: -200px;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .imgbox #splash {
+        top: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Adjust wrapper columns */
+    .wrapper {
+        flex-direction: column;
+        padding: 0 5%;
+        overflow: visible;
+    }
+
+    .cols {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Decorative circles position fix */
+    .wrapper::before {
+        height: 200px;
+        width: 200px;
+        left: -20%;
+        top: 20%;
+    }
+
+    .wrapper::after {
+        height: 100px;
+        width: 100px;
+        left: 50%;
+        top: 0%;
     }
 }
