@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manikandan's protfolio</title>
+    <link rel="stylesheet" href="dasboard.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <div id="logo-container">
+                <img src="logo.jpeg" alt="Myprofile" id="Mylogo" />
+            </div>
+            <div class="text-container" id="textContainer">
+                <div class="names">M. Manikandan MCA</div>
+                <div class="domain">Full Stack Developer</div>
+            </div>
+        </div>
+        <div class="menu-toggle" id="menuToggle">&#9776;</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Certificate</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="wrapper">
+        <div class="cols cols0">
+            <span class="topline">Hello</span>
+            <h1>I'm a <span class="multitext"></span></h1>
+            <p>I'm Manikandan M, a fresher and 2023 MCA graduate from Kalasalingam University. I am passionate about technology and software development, and I’m looking for an opportunity to start my career in the IT industry. I am eager to learn, grow, and prove my skills through hard work and dedication.</p>
+            <div class="btns">
+                <button class="btn hire">Hire Me</button>
+                <button class="btn download">Download CV</button>
+            </div>
+        </div>
+        <div class="cols cols1">
+            <div class="imgbox">
+                <img src="splash.png" alt="splash" id="splash" />
+                <img src="coverimage.png" alt="manikandan" id="background" />
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        const logoContainer = document.getElementById('logo-container');
+        const textContainer = document.getElementById('textContainer');
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        setTimeout(() => {
+            logoContainer.classList.add('move-to-corner');
+
+            setTimeout(() => {
+                textContainer.classList.add('show');
+                document.querySelector('.names').classList.add('typing');
+                document.querySelector('.domain').classList.add('typing');
+                document.body.classList.add('changed');
+            }, 1000);
+        }, 2500);
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+
+        var typed = new Typed('.multitext', {
+            strings: ['Developer','Coder','FreeLancer'],
+            typeSpeed: 120,
+            backSpeed: 80,
+            backDelay: 1000,
+            startDelay: 1000,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
