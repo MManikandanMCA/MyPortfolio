@@ -37,6 +37,11 @@
             <h6>I'm Manikandan M, a fresher and 2023 MCA graduate from Kalasalingam University. I am passionate about
                 technology and software development, and I’m looking for an opportunity to start my career in the IT
                 industry. I am eager to learn, grow, and prove my skills through hard work and dedication.</h6>
+            <div class="counter">
+                <h1 id="freelance"></h1>
+                <h1 id="miniproject"></h1>
+                <h1 id="fullstack"></h1>
+            </div>
             <div class="btns">
                 <a href="contect.html"><button class="btn hire">Hire Me</button></a>
                 <a href="Manikandan_Developer.pdf" download><button class="btn download">Download CV</button></a>
@@ -46,13 +51,48 @@
         <div class="cols cols1">
             <div class="imgbox">
                 <img src="splash.png" alt="splash" id="splash" />
-                <img src="MainLogo.png" alt="manikandan" id="background"/>
+                <img src="MainLogo.png" alt="manikandan" id="background" />
             </div>
         </div>
     </div>
     <!--Typed.js Library-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js">
+    </script>
+    <script>
+        let count1 = 0; // Start from 100
+        let count2 = 0;
+        let count3 = 0;
+        let count4 = 0;
+        const countdownElement1 = document.getElementById('freelance');
+        const countdownElement2 = document.getElementById('miniproject');
+        const countdownElement3 = document.getElementById('fullstack');
+
+        function countdown() {
+            let interval = setInterval(() => {
+                if (count1 < 2) {
+                    count1++;
+                    countdownElement1.innerHTML = `${count1}+<div class="label">Freelance Project</div>`;
+                }
+
+                if (count2 < 7) {
+                    count2++;
+                    countdownElement2.innerHTML = `${count2}+<div class="label">Mini Projects</div>`;
+                }
+
+                if (count3 < 1) {
+                    count3++;
+                    countdownElement3.innerHTML = `${count3}+<div class="label">Full Stack App</div>`;
+                }
+
+                if (count1 >= 2 && count2 >= 7 && count3 >= 1) {
+                    clearInterval(interval);
+                }
+            }, 500);
+        }
+
+
+        countdown(); // Start countdown
     </script>
 </body>
 
