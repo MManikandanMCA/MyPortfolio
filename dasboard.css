@@ -155,13 +155,15 @@ body.changed {
     font-size: 1em;
     transition: color 0.3s ease;
 }
-.activepage { 
+
+.activepage {
     color: #a40af7;
     text-decoration: underline;
     text-underline-offset: 8px;
     font-weight: 600;
     transition: color 10s ease;
 }
+
 /* Hamburger menu */
 .menu-toggle {
     display: none;
@@ -343,8 +345,7 @@ button:hover {
 
 .imgbox img {
     position: relative;
-    height: 70%;
-    width: calc(110% - 80px);
+    width: calc(80% - 80px);
     top: 200px;
     right: 200px;
     transform: rotateY(180deg);
@@ -362,6 +363,13 @@ button:hover {
     50% {
         transform: rotateY(180deg) translateY(-20px);
     }
+}
+
+.imgbox #background {
+    margin-left: 300px;
+    height: 600px;
+    margin-top: -200px;
+
 }
 
 .imgbox #splash {
@@ -401,17 +409,24 @@ button:hover {
         margin-top: 10px;
     }
 
+    .wrapper {
+        height: 110vh;
+        padding: 0 10%;
+        overflow-y: hidden;
+    }
+
     .topline {
         font-size: 40px;
         text-align: center;
-        margin-top: 500px;
-        margin-left: 0px;
+        margin-top: 400px;
+        margin-left: -150px;
     }
 
     .topline::after {
-        left: 70%;
+        left: 65%;
         transform: translateX(-50%);
     }
+
     .multitext {
         font-size: 1em;
         text-align: center;
@@ -420,12 +435,11 @@ button:hover {
     /* Adjust paragraph */
     h6 {
         font-size: 1em;
-        margin: 20px;
         margin-top: -10px;
-        color: rgb(9, 48, 126);
-        text-align: center;
-        width: 90%;
-        line-height: 1.4;
+        color: rgb(228, 225, 227);
+        text-align: justify;
+        width: 85%;
+        letter-spacing: 1px;
         margin-right: 0px;
         margin-left: 0px;
 
@@ -436,7 +450,6 @@ button:hover {
         left: 0;
         display: flex;
         flex-direction: column;
-        align-items: center;
         width: 50%;
         margin-top: 100px;
         font-size: 1em;
@@ -448,11 +461,15 @@ button:hover {
     .download {
         width: 100%;
         margin-top: 10px;
+        border-radius: 40px;
+        margin-left: 65px;
+        box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+
     }
 
     /* Image box adjustments */
     .imgbox img {
-        top: -200px;
+        top: -210px;
         right: 0;
         width: 100%;
         height: 100%;
@@ -464,12 +481,17 @@ button:hover {
         height: 100%;
     }
 
+    .imgbox #background {
+        margin-left: 5px;
+        opacity: 0.6;
+    }
+
     /* Adjust wrapper columns */
     .wrapper {
         flex-direction: column;
         padding: 0 5%;
         overflow: hidden;
-        
+
     }
 
     .cols {
