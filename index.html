@@ -60,7 +60,7 @@
     <script src="script.js">
     </script>
     <script>
-        let count1 = 0; // Start from 100
+        let count1 = 0; // Start from 0
         let count2 = 0;
         let count3 = 0;
         let count4 = 0;
@@ -75,7 +75,7 @@
                     countdownElement1.innerHTML = `${count1}+<div class="label">Freelance Project</div>`;
                 }
 
-                if (count2 < 7) {
+                if (count2 < 9) {
                     count2++;
                     countdownElement2.innerHTML = `${count2}+<div class="label">Mini Projects</div>`;
                 }
@@ -85,7 +85,7 @@
                     countdownElement3.innerHTML = `${count3}+<div class="label">Full Stack App</div>`;
                 }
 
-                if (count1 >= 2 && count2 >= 7 && count3 >= 1) {
+                if (count1 >= 2 && count2 >= 8 && count3 >= 1) {
                     clearInterval(interval);
                 }
             }, 500);
