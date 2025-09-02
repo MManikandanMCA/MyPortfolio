@@ -1,7 +1,7 @@
 const logoContainer = document.getElementById('logo-container');
-        const textContainer = document.getElementById('textContainer');
-        const menuToggle = document.getElementById('menuToggle');
-        const navLinks = document.getElementById('navLinks');
+const textContainer = document.getElementById('textContainer');
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
 
         setTimeout(() => {
             logoContainer.classList.add('move-to-corner');
@@ -12,7 +12,7 @@ const logoContainer = document.getElementById('logo-container');
                 document.querySelector('.domain').classList.add('typing');
                 document.body.classList.add('changed');
             }, 1000);
-        }, 2500);
+        });
         
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
